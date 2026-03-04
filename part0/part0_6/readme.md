@@ -5,7 +5,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    Note When user click button, collect value in "notes_form" element into note variable, adds it to the notes list and then update the page with new notes list. After that sends variable with HTTP POST
+    Note right of browser: When user click button, collect value in "notes_form" element into note variable, adds it to the notes list and then update the page with new notes list. After that sends variable with HTTP POST
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa, payload: [{"note"="new note"}]
     activate server
