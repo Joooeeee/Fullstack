@@ -13,7 +13,7 @@ sequenceDiagram
     server-->>browser: Statuds 302, redirect to /notes
     deactivate server
 
-    Note right of browser: the browser reidirect to https://studies.cs.helsinki.fi/exampleapp/notes
+    Note right of browser: The browser reidirect to https://studies.cs.helsinki.fi/exampleapp/notes
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
